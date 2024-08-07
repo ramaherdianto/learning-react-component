@@ -18,10 +18,14 @@ export default function App() {
                 <Search />
                 <NumResult movies={movies} />
             </Navbar>
-            <MainContent>
-                <MovieList movies={movies} />
-                <MovieWatched />
-            </MainContent>
+            <MainContent
+                element={
+                    <>
+                        <MovieList movies={movies} />
+                        <MovieWatched />
+                    </>
+                }
+            ></MainContent>
         </>
     );
 }

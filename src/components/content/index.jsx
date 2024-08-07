@@ -1,9 +1,9 @@
 import React from 'react';
 
-const index = ({ children }) => {
+const index = ({ element }) => {
     return (
         <>
-            <main className='main'>{children}</main>
+            <main className='main'>{element}</main>
         </>
     );
 };
