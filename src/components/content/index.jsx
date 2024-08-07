@@ -1,14 +1,9 @@
 import React from 'react';
-import MovieList from './MovieList';
-import MovieWatched from './MovieWatched';
 
-const index = ({ movies }) => {
+const index = ({ children }) => {
     return (
         <>
-            <main className='main'>
-                <MovieList movies={movies} />
-                <MovieWatched />
-            </main>
+            <main className='main'>{children}</main>
         </>
     );
 };
